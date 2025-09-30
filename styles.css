@@ -326,7 +326,7 @@ body {
 .probability-label {
     min-width: 120px;
     font-weight: 600;
-    color: var(--border);
+    color: var(--text);
     border-radius: 10px;
     overflow: hidden;
     position: relative;    
@@ -394,3 +394,4 @@ body {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
