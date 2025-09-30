@@ -114,7 +114,7 @@
   (async () => {
     try {
       statusEl.innerHTML = '🔄 Загружаю модель транспорта...';
-      model = await tmImage.load(`model.json`, `metadata.json`);
+      model = await tmImage.load(`./model.json`, `./metadata.json`);
       statusEl.innerHTML = '✅ Модель загружена! Выберите файл или запустите камеру';
     } catch (e) {
       statusEl.innerHTML = '❌ Ошибка загрузки модели';
@@ -258,4 +258,5 @@
     if (raf) cancelAnimationFrame(raf);
     if (webcam) webcam.stop();
   });
+
 </script>
